@@ -1,1 +1,5 @@
-{ "code-runner.executorMap": {"typescript": "node node_modules/tsx/dist/cli.mjs"}}
+{ 
+  "code-runner.executorMap": {
+    "typescript": "node node_modules/tsx/dist/cli.mjs"
+  }
+}
