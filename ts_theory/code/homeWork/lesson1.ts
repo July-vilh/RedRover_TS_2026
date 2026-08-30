@@ -31,7 +31,7 @@ console.log(typeof(bb));
 console.log(typeof(yy));
 
 // 3. Возьмем персонаж James Bond. Придумайте, какие его характеристики логично объявить через const, а какие через let. Пропишите их и выведите на экран
-const name: string = "James";
+const namePerson: string = "James";
 const lastName2: string = "Bond";
 let age: number = 30;
 
@@ -70,10 +70,10 @@ console.log(a > 0 || b === 0); // -- false, тк ни одно из услови
 console.log(a > 0 || ""); // -- false || "" → "", потому что || возвращает последнее значение, если все значения falsy
 console.log(a < 0 || "Hello"); // -- false || "Hello" → "Hello", потому что || возвращает первое truthy значение
 
-let x: number = 5;
+let xxx: number = 5;
 let yyy: number = 10;
 let z: number = 15;
-let result3 = (x > yyy || yyy < z) && !(z === x); 
+let result3 = (xxx > yyy || yyy < z) && !(z === xxx); 
 console.log(result3) // -- true
 
 //6. Какого типа данных будет результат выполнения оператора "typeof" для переменной "isAdult", если возраст "age" равен 18?
@@ -88,7 +88,20 @@ console.log(typeof(isAdult)); // -- 18 >= 18 (true) поэтому boolean
 // В CodeWars, некоторые задачи можно писать только в JavaScript, а не в TypeScript.
 // Всегда пытайтесь выбрать TypeScript, но если это не возможно, решайте в JavaScript, но пишите чистый код, как бы писали в TypeScript (например, переменная создается только с одним типом данных, не переписывайте переменную с другим типом данных, и т.д.)
 
-// http://www.codewars.com/kata/560f8d41cf6e1fe5c900002e 
+// 7.1.  http://www.codewars.com/kata/560f8d41cf6e1fe5c900002e 
+// In JavaScript, there is a special case where strict comparison of the same variable returns false! 
+// Try to find out what must be done to get such result!
+
+var x = NaN;
+console.log(x === x); // returns false!
+
+
 // http://www.codewars.com/kata/50ee6b0bdeab583673000025 
+// This code should store "codewa.rs" as a variable called 
+// name but it's not working. Can you figure out why?
+
+var aaa = "code";
+var bbb = "wa.rs";
+export var name = aaa + bbb;
 
 
