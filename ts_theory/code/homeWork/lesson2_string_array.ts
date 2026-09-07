@@ -118,27 +118,10 @@ console.log("Return value   '" + newS + "'\n"); // возвращает 'knowled
 /*
 2. Заполнить таблицу методов строк. 
 Она находится в той же папке, где и домашние задания. Копируем табличку к себе и заполняем.
+
+Решение (заполненная таблица):
+https://docs.google.com/spreadsheets/d/1f-S88J_MQZ_g53BhIgPEbLvz3pnkQzkqC42S8P0bgj0/edit?hl=ru&gid=0#gid=0
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -153,9 +136,9 @@ let res;
 console.log("1. Method at()");
 console.log("Orig array ", arr1);
 arr1.at(3);
-console.log("New array  ", arr1);
+console.log("New array  ", arr1); //не меняет начальное значение массива
 console.log("--- Array did not change.");
-console.log("Return value   ", arr1.at(3), "\n");
+console.log("Return value   ", arr1.at(3), "\n"); //возвращает "a" (элемент под индексом 3)
 
 
 
