@@ -141,14 +141,12 @@ console.log("--- Array did not change.");
 console.log("Return value   ", arr1.at(3), "\n"); //возвращает "a" (элемент под индексом 3)
 
 
-
-
 console.log("2. Method push()");
 console.log("Orig array ", arr1);
 res = arr1.push("10");
-console.log("New array  ", arr1);
-console.log("---!!! Array changed");
-console.log("Return value   ", res, "(длина нового массива) \n");
+console.log("New array  ", arr1); //печатает тк arr1 теперь с "10" в конце итого ["1", "2", "3", "a", "b", "c", "10"]
+console.log("---!!! Array changed"); //меняет начальное значение массива
+console.log("Return value   ", res, "(длина нового массива) \n"); //возвращает 7 (то есть длину нового массива)
 
 
 arr1 = ["1", "2", "3", "a", "b", "c"];
@@ -157,9 +155,9 @@ arr1 = ["1", "2", "3", "a", "b", "c"];
 console.log("3. Method unshift()");
 console.log("Orig has value ", arr1);
 res = arr1.unshift("10");
-console.log("New has value  ", arr1);
-console.log("---!!! Array changed");
-console.log("Return value   ", res, "(длина нового массива) \n");
+console.log("New has value  ", arr1); //печатает тк arr1 теперь с "10" В НАЧАЛЕ итого ["10", "1", "2", "3", "a", "b", "c"];
+console.log("---!!! Array changed"); //меняет начальное значение массива
+console.log("Return value   ", res, "(длина нового массива) \n"); //возвращает 7 (то есть длину нового массива)
 
 
 arr1 = ["1", "2", "3", "a", "b", "c"];
@@ -168,9 +166,9 @@ arr1 = ["1", "2", "3", "a", "b", "c"];
 console.log("4. Method pop()");
 console.log("Orig has value ", arr1);
 res = arr1.pop();
-console.log("New has value  ", arr1);
-console.log("---!!! Array changed");
-console.log("Return value   ", res, "\n");
+console.log("New has value  ", arr1); //печатает тк arr1 теперь без ПОСЛЕДНЕГО элемента в КОНЦЕ итого ["1", "2", "3", "a", "b"];
+console.log("---!!! Array changed"); //меняет начальное значение массива
+console.log("Return value   ", res, "\n"); //возвращает c (то есть удаленный элемент)
 
 
 arr1 = ["1", "2", "3", "a", "b", "c"];
@@ -178,47 +176,38 @@ arr1 = ["1", "2", "3", "a", "b", "c"];
 
 console.log("5. Method shift()");
 console.log("Orig has value ", arr1);
-res = arr1.shift();
-console.log("New has value  ", arr1);
-console.log("---!!! Array changed");
-console.log("Return value   ", res, "\n");
+res = arr1.shift(); 
+console.log("New has value  ", arr1); //печатает тк arr1 теперь без ПЕРВОГО элемента в НАЧАЛЕ итого ["2", "3", "a", "b", "c"];
+console.log("---!!! Array changed"); //меняет начальное значение массива
+console.log("Return value   ", res, "\n"); //возвращает 1 (то есть удаленный элемент)
 
 
-arr = ["1", "2", "3", "a", "b", "c"];
+arr1 = ["1", "2", "3", "a", "b", "c"];
 
 
 console.log("6. Method indexOf()");
 console.log("Orig has value ", arr1);
 res = arr1.indexOf("a");
-console.log("New has value  ", arr1);
+console.log("New has value  ", arr1); //не меняет начальное значение массива
 console.log("--- Array did not change.");
-console.log("Return value   ", res, "\n");
-
-
+console.log("Return value   ", res, "\n"); //возвращает 3 (индекс первого найденного элемента)
 
 
 console.log("7. Method concat()");
 console.log("Orig has value ", arr1);
 res = arr1.concat(["A", "B"]);
-console.log("New has value  ", arr1);
+console.log("New has value  ", arr1); //не меняет начальное значение массива
 console.log("--- Array did not change.");
-console.log("Return value   ", res, "\n");
-
-
-
-
+console.log("Return value   ", res, "\n"); //возвращает ['1', '2', '3', 'a', 'b', 'c', 'A', 'B'] тк объединяет исходный массив с другим массивом/значениями
 
 
 /*
 4. Заполнить табличку методов массивов.
 Она находится в той же папке, где и домашние задания. Копируем табличку к себе и заполняем.
+
+Решение (заполненная таблица):
+https://docs.google.com/spreadsheets/d/1f-S88J_MQZ_g53BhIgPEbLvz3pnkQzkqC42S8P0bgj0/edit?hl=ru&gid=0#gid=0
 */
-
-
-
-
-
-
 
 
 /*
