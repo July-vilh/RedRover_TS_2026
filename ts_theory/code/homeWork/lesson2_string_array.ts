@@ -312,29 +312,41 @@ console.log(message);
 
 /*
 7. В этом коде ошибки. Найдите, покажите какие и почините.
+
+- Переменная result3 не может быть создана через const
+- Все значения в case кроме 5 и 6 - строки, а переменная monthNumber - число.
+- Case со значением 3 - забыли break
+- Case со значением 5 - переменная results3, а не result3 (лишняя буква s)
+- Case со значением 6 - забыли двоеточие
+- Case со значением 6 - используем = (присваивание), а не == (сравнивание)
+- Нет дефолтного значения
 */
 
 const monthNumber: number = 1;
-const result3: string = "";
+let result3: string = ""; //const -> поменяла на let
 
 switch (monthNumber) {
-     case "1":
+     case 1: // строку "1" -> в цифру 1
           result3 = "January";
           break;
-     case "2":
+     case 2: //строку "2" -> в цифру 2
           result3 = "February";
           break;
-     case "3":
+     case 3: //строку "3" -> в цифру 3
           result3 = "March";
-     case "4":
-          result3 = "April";
+          break; //добавила break;
+     case 4: // строку "4" -> в цифру 4
+          result3 = "April"; 
           break;
      case 5:
-          results3 = "May";
+          result3 = "May"; //results3 -> в result3
           break;
-     case 6
-          result3 == "June";
+     case 6: //добавила двоеточие :
+          result3 = "June"; //вместо == -> одно равно =
           break;
+     default: //добавила дефолное значение
+        result3 = "Not Specified";
+        break; 
 }
 
 console.log(result3);
