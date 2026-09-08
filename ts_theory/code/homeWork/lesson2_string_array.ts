@@ -357,6 +357,83 @@ console.log(result3);
    (перевести дни 1-7 в Пон-Вос)
 */
 
+const dayNumber: number = 1;
+let dayName: string = "";
+
+switch (dayNumber) {
+     case 1:
+          dayName = "Monday";
+          break;
+     case 2:
+          dayName = "Tuesday";
+          break;
+     case 3:
+          dayName = "Wednesday";
+          break;
+     case 4:
+          dayName = "Thursday";
+          break;
+     case 5:
+          dayName = "Friday";
+          break;
+     case 6:
+          dayName = "Saturday";
+          break;
+     case 7: 
+          dayName = "Sunday";
+          break;
+     default:
+          dayName = "No such day exist!";
+          break;
+}
+
+console.log(dayName);
+
+
+// Вариант 2: отдельный флаг error, чтобы отличать корректный день от неверного номера
+// и выводить для них разные сообщения.
+// Блок { } нужен, чтобы имя dayName не конфликтовало с объявленным выше.
+{
+    const dayId: number = 1;
+    let dayName: string = "";
+    let error: boolean = false;
+
+    switch (dayId) {
+        case 1:
+            dayName = "Monday";
+            break;
+        case 2:
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
+            break;
+        case 7:
+            dayName = "Sunday";
+            break;
+        default:
+            error = true;
+            dayName = "Sorry, no such day exist!";
+            break;
+    }
+
+    if (error) {
+        console.log(dayName);
+    }
+    else {
+        console.log(`Today is ${dayName}.`);
+    }
+}
+
 
 /*
 9. Напишите программу по согласованию отпуска в зависимости от месяца.
