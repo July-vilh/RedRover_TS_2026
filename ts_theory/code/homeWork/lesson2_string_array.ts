@@ -495,6 +495,22 @@ console.log(result);
    Студенты - скидка в 10%
 */
 
+const ticket: number = 400;
+const adult: number = 0;
+let student: boolean = true;
+
+if(adult < 2){
+     console.log("Price of your ticket is free");
+} else if (adult < 10){
+     console.log("Price of your ticket is " + (ticket / 2));
+} else if (adult >= 65){
+     console.log("Price 0f your ticket is " + (ticket * 0.85));
+} else if (student) {
+     console.log("Price 0f your ticket is " + (ticket * 0.90));
+} else {
+     console.log("Price of your ticket is " + ticket)
+}
+
 
 /*
 13. Решите задачу с помощью пройденных тем (исключительно с помощью пройденных тем):
