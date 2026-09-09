@@ -455,6 +455,32 @@ if (month === "July" || month === "August"){
    Проверьте ваш код с разными значениями, положительными, отрицательными, дробными и т.д.
 */
 
+const a: number = 1;
+const b: number = 2;
+let operator: string = "+";
+let result: number = 0;
+
+switch (operator) {
+     case "+":
+          result = a + b
+          break;
+     case "-":
+          result = a -b;
+          break;
+     case "/":
+          result = a / b;
+          break;
+     case "*":
+          result = a * b;
+          break;
+
+     default:
+          console.log("Неизвестный оператор");
+          break;
+}
+
+console.log(result);
+
 
 /*
 11. Напишите программу, которая определяет, является ли заданный год високосным по правилам Григорианского календаря.
