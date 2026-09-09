@@ -441,6 +441,12 @@ console.log(dayName);
    если другие месяцы, то - "denied".
 */
 
+let month: string = "July";
+if (month === "July" || month === "August"){
+     console.log("approved");
+} else {
+     console.log("denied");
+}
 
 /*
 10. Напишите простенький калькулятор (*, /, +, -). У вас должны быть две переменные
