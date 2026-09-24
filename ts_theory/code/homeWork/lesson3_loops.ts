@@ -90,9 +90,9 @@ console.log(array3)
             sum += numbers[i];
         }
     }
-    console.log(sum); */
+    console.log(sum);  */
 
-
+// - результат этого кода будет: пройдет циклом по массиву и выведет сумму только четных чисел (2 + 4 = 6)
 
 
 
@@ -104,6 +104,41 @@ console.log(array3)
  ***
   *
 */ 
+
+let row: string = "";
+const max1: number = 2;
+
+//draw top triangle
+for (let i = 0; i <= max1; i = i + 1) {
+    for (let k = i; k < max1; k = k + 1) {
+        row = row + " ";
+    }
+
+    for (let j = 0; j <= i * 2; j = j + 1) {
+        row = row + "*";
+    }
+
+    row = row + "\n";
+}
+
+//draw bottom triangle
+for (let i = max1; i >= 0; i = i - 1) {
+    for (let k = i; k < max1; k = k + 1) {
+        row = row + " ";
+    }
+
+    for (let j = i * 2; j >= 0; j = j - 1) {
+        row = row + "*";
+    }
+
+    row = row + "\n";
+}
+
+
+console.log(row);
+
+
+console.log(row)
 
 /* 9. Нарисуйте прямоугольный треугольник
 
@@ -158,7 +193,8 @@ console.log(array3)
 */
 
 /* 13. Нарисуйте ромб из цифр (будьте внимательны!)
-               1
+        
+          1
         121
        12321
       1234321
@@ -177,6 +213,7 @@ console.log(array3)
        12321
         121
          1
+
 */
 
 /* 14. Сложнее*: Нарисуйте горизонтальный треугольник из цифр
@@ -208,3 +245,54 @@ console.log(array3)
 Креативное задание 2* (посложнее)
 
 Придумайте свой собственный шифр, а также программу, которая будет шифровать и затем дешифровщик к нему */
+
+
+/* Задачки на CodeWars:
+
+https://www.codewars.com/kata/554b4ac871d6813a03000035 === DONE
+https://www.codewars.com/kata/57a0e5c372292dd76d000d7e 
+https://www.codewars.com/kata/55a2d7ebe362935a210000b2 
+https://www.codewars.com/kata/5b077ebdaf15be5c7f000077 
+
+https://www.codewars.com/kata/5932c94f6aa4d1d786000028 
+https://www.codewars.com/kata/570bcd9715944a2c8e000009 
+https://www.codewars.com/kata/5b4e779c578c6a898e0005c5 
+https://www.codewars.com/kata/5601409514fc93442500010b 
+https://www.codewars.com/kata/5648b12ce68d9daa6b000099 
+https://www.codewars.com/kata/57a2013acf1fa5bfc4000921 
+https://www.codewars.com/kata/58acfe4ae0201e1708000075 
+
+https://www.codewars.com/kata/5265326f5fda8eb1160004c8 
+https://www.codewars.com/kata/544675c6f971f7399a000e79 
+
+https://www.codewars.com/kata/572af273a3af3836660014a1 
+https://www.codewars.com/kata/572cb264362806af46000793 
+https://www.codewars.com/kata/572df796914b5ba27c000c90 
+
+https://www.codewars.com/kata/57f24e6a18e9fad8eb000296 
+https://www.codewars.com/kata/56b29582461215098d00000f 
+https://www.codewars.com/kata/5413759479ba273f8100003d 
+https://www.codewars.com/kata/515e271a311df0350d00000f 
+https://www.codewars.com/kata/5715eaedb436cf5606000381 
+https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3 
+https://www.codewars.com/kata/53dc54212259ed3d4f00071c 
+https://www.codewars.com/kata/56f69d9f9400f508fb000ba7 
+https://www.codewars.com/kata/571d42206414b103dc0006a1 
+
+Более сложные задачи (для тех кто хочет, не обязательно):
+
+https://www.codewars.com/kata/555086d53eac039a2a000083
+https://www.codewars.com/kata/5865918c6b569962950002a1 
+https://www.codewars.com/kata/50654ddff44f800200000007 
+https://www.codewars.com/kata/57cc975ed542d3148f00015b
+https://www.codewars.com/kata/582e4c3406e37fcc770001ad
+
+https://leetcode.com/problems/fizz-buzz/ 
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/ 
+https://leetcode.com/problems/palindrome-number/description/ 
+
+https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/ https://leetcode.com/problems/search-insert-position/ 
+https://leetcode.com/problems/remove-element/ 
+https://leetcode.com/problems/two-sum/description/ 
+https://leetcode.com/problems/merge-sorted-array/description/ */
+
