@@ -306,7 +306,7 @@ console.log(str4)
 
 https://www.codewars.com/kata/554b4ac871d6813a03000035 === DONE
 https://www.codewars.com/kata/57a0e5c372292dd76d000d7e === DONE
-https://www.codewars.com/kata/55a2d7ebe362935a210000b2 
+https://www.codewars.com/kata/55a2d7ebe362935a210000b2 === DONE
 https://www.codewars.com/kata/5b077ebdaf15be5c7f000077 
 
 https://www.codewars.com/kata/5932c94f6aa4d1d786000028 
