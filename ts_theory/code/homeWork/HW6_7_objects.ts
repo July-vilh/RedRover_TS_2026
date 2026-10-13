@@ -2,22 +2,69 @@
 // Задачки:
 
 // 1. Создайте объект cars, где будут 3-4 разные машины с их названиями, моделями, годом выпуска и цветом.
+interface Car {
+        name: string,
+        model: string,
+        year: number,
+        color: string
+}
+
+interface MyCars {
+        firstCar: Car,
+        secondCar: Car,
+        thirdCar: Car
+}
+
+const cars: MyCars = {
+        firstCar: {
+                name: "Audi",
+                model: "TT",
+                year: 2020,
+                color: "blue"
+        },
+        secondCar: {
+                name: "Toyota",
+                model: "Prius",
+                year: 1997,
+                color: "green"
+        },
+        thirdCar: {
+                name: "Mercedes",
+                model: "Benz",
+                year: 2010,
+                color: "yellow"
+        }
+}
+console.log(cars);
 
 // 2. Работа с объектом room. Выполняйте пошагово.
+interface Room {
+        heigh: number,
+        tv: string,
+        big: boolean
+}
 
 // ----- 2.1. Создайте объект room и его параметры:
-
-// ----- 2.2. Ключ height со значением 3
-
-// ----- 2.3. Ключ tv со значением samsung
-
-// ----- 2.4. Ключ big со значением true
+const room: Room = {
+        // ----- 2.2. Ключ height со значением 3
+        heigh: 3,
+        // ----- 2.3. Ключ tv со значением samsung
+        tv: "samsung",
+        // ----- 2.4. Ключ big со значением true
+        big: true
+}
 
 // ----- 2.5. Выведите в console все параметры объекта room по очереди
+console.log("full object: ", room);
+console.log("heigh of the room: ", room.heigh);
+console.log("tv of the room: ", room.tv);
+console.log("big of the room: ", room.big);
 
 // ----- 2.6. Выведите в console тип данных параметра big
+console.log("type of big param: ", typeof(room.big));
 
 // ----- 2.7. Выведите в console количество символов в строке параметра tv (длину строки)
+console.log("length of the tv param string: ", room.tv.length);
 
 // ----- 2.8. Выведите в console результат расчёта: длина строки параметра tv минус 1
 
